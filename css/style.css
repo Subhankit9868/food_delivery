@@ -129,29 +129,20 @@
     height: 4rem;
 }
 
-.text{
-    
-}
-
-#client-section{         /*  Pseudo Selector */
-
+#client-section ::before{         /*  Pseudo Selector */
     content: "";
-    position: absolute; 
-    
-    width: 70%;
+    /* position: absolute; */
+    background: url('../bg3.jpg');
+    background-size: 50%;
+    width: 50%;
     height: 50%;
-
-    left: 50%;
-    /* ye translate wala jo 50% hai wo khudke element ka hai  */
-    transform: translateX(-50%);
+    z-index: -1;
+    opacity: .4;
 }
 #clients{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../bg3.jpg');
-    margin-bottom: 10px;
-    border-radius: 8px;
 }
 .clients-items{
     padding: 34px;
@@ -182,9 +173,6 @@
     font-size: 1.5rem;
     border-radius: 10px;
     cursor:pointer;
-}
-.btn:hover{
-    background-color: #C2B8A3;
 }
 
 .center{
